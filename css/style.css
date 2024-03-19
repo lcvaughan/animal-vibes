@@ -1,0 +1,80 @@
+
+#home {
+    background-image: url(../img/forest.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: absolute;
+}
+
+h1 {
+    font-family: "Bevan", serif; 
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Bevan", serif;
+}
+
+a {
+    background-color: chocolate;
+    text-decoration: none;
+    color: beige;
+}
+
+#explore {
+    background-color:seagreen;
+    text-align: center;
+}
+
+#different_font {
+    font-family: "Kavivanar", cursive;
+}
+
+#mountains {
+    background-image: url(../img/mountains.webp);
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-position-x: center;
+    background-color:steelblue;
+}
+
+#shores {
+    background-image: url(../img/ocean.webp);
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: cover;
+    background-position-y:top;
+    background-color:darkslategrey;
+}
+
+#rocky {
+    background-image: url(../img/canyon.webp);
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: cover;
+    background-position-y:top;
+    background-color:darkslategrey;
+}
+
+#jungle {
+    background-image: url(../img/jungle.webp);
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-position-x: center;
+    background-color:darkolivegreen;
+}
+ 
+#jam {
+    color: beige;
+}
+
+#second_font {
+    font-family: "Kavivanar", cursive;
+}
+
+.Kavivanar {
+    font-family: "Kavivanar", cursive;
+    color: chocolate;
+}
