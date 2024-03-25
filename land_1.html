@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Vibes</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body id="mountains">
-    <h1>Mt. Icy</h1>
-    <h2><a href="explore.html">Back</a></h2>
-</body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Viewer</title>
+    <script src="js/click-to-enlarge.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+      <img id="mountains" src="img/mountains.webp" alt="">
+      <img
+        class="thumbnail"
+        id="mt-icy-one"
+        src="img/Mt-Icy-1tag.png"
+        onclick="showText('As of 2022, Animal Jam has over 130 million registered users worldwide, making it one of the largest online virtual worlds!')"
+        alt="Thumbnail 1"
+      />
+      <img
+        class="thumbnail"
+        id="mt-icy-two"
+        src="img/Mt-icy-2-tag.png"
+        onclick="showText('Polar bears are like the kings and queens of the Arctic. They have thick fur to keep them warm and love to swim in the icy waters.')"
+        alt="Thumbnail 2"
+      />
+      <img
+        class="thumbnail"
+        id="mt-icy-three"
+        src="img/Mt-icy-3-tag.png"
+        onclick="showText('The Arctic is a super cold place at the tippy-top of the Earth. In fact, its one of the coldest spots on the whole planet! The Arctic is covered in ice and snow almost all year round. Its like a giant ice kingdom!')"
+        alt="Thumbnail 3"
+      />
+      <h2><a class="back-new-color" href="explore.html">Back</a></h2>
+
+    <div id="displayTextContainer" onclick="hideText()">
+      <div id="displayText"></div>
+    </div>
+  </body>
+</html>

@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <a href="land_1.html"></a>
-        <a href="land_2.html"></a>
-        <a href="land_3.html"></a>
-        <a href="land_4.html"></a>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Vibes</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Viewer</title>
+  <script src="js/click-to-enlarge.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body id="rocky">
-    <h1>Rocky Dessert</h1>
-    <h2><a href="explore.html">Back</a></h2>
+<body>
+      <img id="rocky" src="img/canyon.webp" alt="rocky desert background">
+      <img
+        class="thumbnail"
+        id="rocky-one"
+        src="img/rocky-1-tag.png"
+        onclick="showText('Even though deserts might seem empty, theyre full of life! Plants and animals have special ways of surviving in the harsh desert environment, making it an important ecosystem on our planet.')"
+        alt="Thumbnail 1"
+      />
+      <img
+        class="thumbnail"
+        id="rocky-two"
+        src="img/rocky-2-tag.png"
+        onclick="showText('Even though deserts are scorching during the day, they can get really cold at night! Thats because theres not much moisture in the air to keep the heat in.')"
+        alt="Thumbnail 2"
+      />
+      <img
+        class="thumbnail"
+        id="rocky-three"
+        src="img/rocky-3-tag.png"
+        onclick="showText('Deserts have some of the most beautiful sunsets youll ever see. The sky turns all sorts of colors, like orange, pink, and purple.')"
+        alt="Thumbnail 3"
+      />
+      <h2><a class="back-new-color" href="explore.html">Back</a></h2>
+
+    <div id="displayTextContainer" onclick="hideText()">
+      <div id="displayText"></div>
+    </div>
 </body>

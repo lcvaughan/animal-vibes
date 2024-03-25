@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <a href="land_1.html"></a>
-        <a href="land_2.html"></a>
-        <a href="land_3.html"></a>
-        <a href="land_4.html"></a>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Vibes</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Viewer</title>
+  <script src="js/click-to-enlarge.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body id="jungle">
-    <h1 id="jam">Jam Jungle</h1>
-    <h2><a href="explore.html">Back</a></h2>
+<body>
+      <img id="jungle" src="img/jungle.webp" alt="jam jungle background">
+      <img
+        class="thumbnail"
+        id="jungle-one"
+        src="img/Jungle-1-tag.png"
+        onclick="showText(' Its important to take care of the jungle and all the animals and plants that live there. Many people work hard to protect the jungle from things like deforestation and pollution so that future generations can enjoy its wonders too.')"
+        alt="Thumbnail 1"
+      />
+      <img
+        class="thumbnail"
+        id="jungle-two"
+        src="img/Jungle-2-tag.png"
+        onclick="showText('Animal Jam is not just for fun; its also educational! You can learn cool facts about animals, their habitats, and even how to help protect them in the real world.')"
+        alt="Thumbnail 2"
+      />
+      <img
+        class="thumbnail"
+        id="jungle-three"
+        src="img/Jungle-3-tag.png"
+        onclick="showText('Jungles are full of amazing animals like monkeys, tigers, parrots, and snakes. They swing from trees, prowl through the undergrowth, and fly high above.')"
+        alt="Thumbnail 3"
+      />
+      <h2><a class="back-new-color" href="explore.html">Back</a></h2>
+
+    <div id="displayTextContainer" onclick="hideText()">
+      <div id="displayText"></div>
+    </div>
 </body>

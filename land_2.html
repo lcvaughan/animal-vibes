@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Vibes</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Viewer</title>
+  <script src="js/click-to-enlarge.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body id="shores">
-    <h1>Shores & Reef</h1>
-    <h2><a href="explore.html">Back</a></h2>
+<body>
+      <img id="Shores" src="img/ocean.webp" alt="Shores&Reef background">
+      <img
+        class="thumbnail"
+        id="shores-one"
+        src="img/ocean-1-tag.png"
+        onclick="showText('Even though weve explored a lot of the ocean, theres still so much we dont know! Every time scientists dive into the depths, they discover new creatures and wonders of the sea.')"
+        alt="Thumbnail 1"
+      />
+      <img
+        class="thumbnail"
+        id="shores-two"
+        src="img/ocean-2-tag.png"
+        onclick="showText('Coral reefs are like underwater rainforests, full of bright colors and incredible creatures like fish and sea turtles. Theyre like a bustling underwater city!')"
+        alt="Thumbnail 2"
+      />
+      <img
+        class="thumbnail"
+        id="shores-three"
+        src="img/ocean-3-tag.png"
+        onclick="showText('Besides playing games, you can also get creative in Animal Jam. You can design your own den, make artwork, or write stories about your adventures.')"
+        alt="Thumbnail 3"
+      />
+      <h2><a class="back-new-color" href="explore.html">Back</a></h2>
+
+    <div id="displayTextContainer" onclick="hideText()">
+      <div id="displayText"></div>
+    </div>
 </body>

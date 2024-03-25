@@ -17,11 +17,6 @@ h2 {
     font-family: "Bevan", serif;
 }
 
-a {
-    text-decoration: none;
-    color: beige;
-}
-
 #explore {
     background-color:seagreen;
     text-align: center;
@@ -32,41 +27,35 @@ a {
 }
 
 #mountains {
-    background-image: url(../img/mountains.webp);
-    background-repeat: no-repeat;
-    background-position: relative;
-    background-position-x: center;
-    background-color:steelblue;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
 }
 
-#shores {
-    background-image: url(../img/ocean.webp);
-    background-repeat: no-repeat;
-    background-position: absolute;
-    background-size: cover;
-    background-position-y:top;
-    background-color:darkslategrey;
+#Shores {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
 }
 
 #rocky {
-    background-image: url(../img/canyon.webp);
-    background-repeat: no-repeat;
-    background-position: absolute;
-    background-size: cover;
-    background-position-y:top;
-    background-color:darkslategrey;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
 }
 
 #jungle {
-    background-image: url(../img/jungle.webp);
-    background-repeat: no-repeat;
-    background-position: relative;
-    background-position-x: center;
-    background-color:darkolivegreen;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
 }
  
 #jam {
-    color: beige;
+    color: honeydew;
 }
 
 #second_font {
@@ -78,12 +67,12 @@ a {
     color: chocolate;
 }
 
-#support {
+#support_2{
     background-image: url(../img/forest.png);
     background-repeat: no-repeat;
+    background-position: absolute;
     background-size: cover;
     background-color: black;
-    background-position: absolute;
 }
 
 header {
@@ -103,14 +92,32 @@ footer {
 }
 
 #button_1 {
-    justify-content: center;
+    position: fixed;
+    left: 40%;
+    bottom: 10%
+}
+
+#button_2 {
+    position: fixed;
+    left: 39%;
+    bottom: 4%  
 }
 
 #colorchange {
     color: black;
+    position: fixed;
+    bottom: 17%;
+    left: 48.5%;
 }
 
-#horizontal-wood {
+#colorchange_2 {
+    color: black;
+    position: fixed;
+    bottom: 12%;
+    left: 44%; 
+}
+
+.horizontal-wood {
     position: absolute;
     z-index: -1;
 }
@@ -118,5 +125,248 @@ footer {
 #welcome {
     position: absolute;
     left: 70%;
-    top 25%;
+    bottom: 34.5%;
+}
+
+#land-1 {
+    position: absolute;
+    top: 38%;
+    left: 40%;
+}
+
+#land-2 {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+
+#land-3 {
+    position: absolute;
+    top: 40%;
+    left: 57%;
+}
+
+#land-4 {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+}
+
+#explore-header {
+    position: absolute;
+}
+
+#bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.different-color-link:visited {
+    color:darkseagreen;
+    text-decoration:none;  
+}
+#new-footer {
+    position: relative;
+    bottom: 0px;
+}
+
+.text-position {
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: chocolate;
+    font-size: larger;
+    font-family: "Kavivanar", cursive;
+    text-align:justify;
+}
+
+#text-position-2 {
+    font-family: "Bevan", serif;
+    margin-left: 15%;
+}
+
+#sign-1 {
+    position: absolute;
+    left: 60%;
+    top: 8.8%;
+    z-index: -1;
+}
+
+#sign-2 {
+    position: absolute;
+    left: 20%;
+    top: 8.8%;
+    z-index: -1;
+}
+
+#mt-icy-one {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+}
+
+#mt-icy-two {
+    position: absolute;
+    left: 80%;
+    top: 30%;
+}
+
+#mt-icy-three {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+
+#displayTextContainer {
+    position:absolute;
+    left:40%;
+    right: 20%;
+    top:50%;
+    background-color:beige;
+    color: chocolate;
+    font-size: larger;
+    font-family: "Kavivanar", cursive;
+    text-align: center;
+}
+
+#shores-one {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+
+#shores-two {
+    position: absolute;
+    left: 20%;
+    top: 55%;
+}
+
+#shores-three {
+    position: absolute;
+    left: 90%;
+    top: 90%;
+}
+
+#rocky-one {
+    position: absolute;
+    left: 80%;
+    top: 40%;
+}
+
+#rocky-two {
+    position: absolute;
+    left: 20%;
+    top: 90%;
+}
+
+#rocky-three {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
+#jungle-one {
+    position: absolute;
+    left: 40%;
+    top: 35%;
+}
+
+#jungle-two {
+    position: absolute;
+    left: 10%;
+    top: 90%;
+}
+
+#jungle-three {
+    position: absolute;
+    left: 90%;
+    top: 50%;
+}
+
+a:link {
+    color: red;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: beige;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: beige;
+    text-decoration: none;
+  }
+
+/* #new-about {
+
+} */
+
+/* New code for button click, image appearing */
+  
+
+
+#the-image {
+    position: relative;
+    left: 2.25%;
+    top: 190px;
+    width: 30%;
+    height: 400px;
+    margin: auto;
+    display: block;
+    margin-top: 3%;
+  }
+  
+#button {
+    font-family: "Kavivanar", cursive;
+    border: 3px chocolate solid;
+    background-color: beige;
+    margin: 50px auto 30px auto;
+    width: 20%;
+    height: 60px;
+    text-align: center;
+    font-size: larger;
+    position: relative;
+    left: 2.25%;
+    top: 190px;
+  }
+
+#move-button {
+    position: relative;
+    right: -34%;
+    bottom: -40px;
+    font-family: "Bevan" serif;
+    border: 3px beige solid;
+    background-color: chocolate;
+    margin: 50px auto 30px auto;
+}
+
+#move-button-2 {
+    position: relative;
+    left: -34.5%;
+    top: 90px;
+    font-family: "Bevan" serif;
+    border: 3px beige solid;
+    background-color: chocolate;
+    margin: 50px auto 30px auto;
+}
+
+#create-body {
+    background-image: url(../img/custom-background.png);
+    background-size: cover;
+  }
+
+.back-new-color {
+    font-family: "Bevan" serif;
+    background-color: chocolate;
+    border: 3px cornflowerblue solid;
 }

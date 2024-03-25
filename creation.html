@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Vibes</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-    <a href="index.html">
-        <img src="img/Group 2 (1).png" alt="logo for webpage" width="350px">
-    </a> 
-        <img src="img/light-brown-cartoon-wood-texture-pattern-wallpaper-background-free-vector 19.png" width="1900px" height="80px">
-    <h1>Create a character</h1>
-    <h2><a href="about.html">About</a>
-        <a href="support.html">Support</a></h2>
-    </header>
-    <footer>
-        <h2>
-    <a href="explore.html">Explore</a>
-    </h2>
-    </footer>
-</body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+    function showText(text) {
+        document.getElementById("displayText").innerText = text;
+        document.getElementById("displayTextContainer").style.display = "block";
+      }
+      
+      function hideText() {
+        document.getElementById("displayTextContainer").style.display = "none";
+      }
+
+      // Get the button and image elements by their IDs
+        var buttonElement = document.getElementById("button");
+        var imageElement = document.getElementById("the-image");
+
+    // Define an array of image sources
+        var imageSources = [
+        "img/image-one.png",
+        "img/image-two.png",
+        "img/image-three.png",
+        "img/image-four.png",
+        ];
+
+// Counter to keep track of the current image index
+    var currentImageIndex = 0;
+// Add a click event listener to the button
+    buttonElement.addEventListener("click", function () {
+// Change the src attribute of the image to the next one in the array
+    imageElement.src = imageSources[currentImageIndex];
+
+// Increment the counter for the next click
+    currentImageIndex++;
+
+// Reset the counter if it goes beyond the array length
+    if (currentImageIndex >= imageSources.length) {
+    currentImageIndex = 0;
+    }
+});
+    </script>
+  </head>
+  <body id="create-body">
+    <img id="the-image" src="img/tiger.png" alt="Image 1"/>
+    <div id="button">Click here to choose a Character!</div>
+    <script src="js/change-image.js"></script>
+    <h1><a id="move-button-2" href="index.html">Back</a></h1>
+    <h1><a id="move-button" href="explore.html">Next</a></h1>
+  </body>
+</html>
